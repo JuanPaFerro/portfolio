@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import twitter from "@icons/twitter.svg";
 import facebook from "@icons/facebook.svg";
 import github from "@icons/github.svg";
@@ -12,13 +13,19 @@ const Footer = () => {
       </div>
       <div className="flex h-full text-gray">
         <div className="border-l border-l-lines w-12 h-full flex items-center justify-center">
-          <Image src={twitter} />
+          <Link href="/">
+            <Image src={twitter} alt="twitter icon" />
+          </Link>
         </div>
         <div className="border-l border-l-lines w-12 h-full flex items-center justify-center">
-          <Image src={facebook} />
+          <Link href="/">
+            <Image src={facebook} alt="facebook icon" />
+          </Link>
         </div>
         <div className="border-l border-l-lines w-12 h-full flex items-center justify-center">
-          <Image src={github} />
+          <Link href="/">
+            <Image src={github} alt="github icon" />
+          </Link>
         </div>
       </div>
     </footer>
