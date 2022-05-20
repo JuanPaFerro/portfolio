@@ -11,7 +11,7 @@ const Menu = () => {
             _hello
           </p>
         </Link>
-        <Link href="/">
+        <Link href="/about">
           <p className="h-12 flex items-center text-white text-label pl-4 border-b border-b-lines">
             _about-me
           </p>
