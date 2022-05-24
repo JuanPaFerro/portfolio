@@ -5,9 +5,13 @@ import twitter from "@icons/twitter.svg";
 import facebook from "@icons/facebook.svg";
 import github from "@icons/github.svg";
 
-const Footer = () => {
+const Footer = ({ isMenu}) => {
   return (
-    <footer className="h-12 w-full border-t items-center border-t-lines flex justify-between relative bottom-0">
+    <footer
+      className={`h-12 w-full border-t items-center border-t-lines flex justify-between bottom-0 ${
+        isMenu ? "absolute" : "relative"
+      }`}
+    >
       <div className="pl-4">
         <p className="text-label text-gray">find me in:</p>
       </div>

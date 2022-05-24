@@ -5,7 +5,7 @@ import Footer from "@components/Footer/Footer";
 const Menu = () => {
   return (
     <section className="absolute right-0 top-12 flex flex-col w-full h-[calc(100%_-_3rem)] bg-blue z-10 rounded-b-lg">
-      <div className="">
+      <div className="cursor-pointer">
         <Link href="/">
           <p className="h-12 flex items-center text-white text-label pl-4 border-b border-b-lines">
             _hello
@@ -27,7 +27,7 @@ const Menu = () => {
           </p>
         </Link>
       </div>
-      <Footer />
+      <Footer isMenu={true} />
     </section>
   );
 };
