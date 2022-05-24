@@ -3,8 +3,8 @@ import React from "react";
 const Hello = () => {
   return (
     <section className="w-full px-4 flex flex-col justify-between">
-      <div className="absolute w-[255.65px] h-[277.05px] left-4 rotate-[-94.3deg] top-60 bg-gradient-green opacity-60 blur-[174px]" />
-      <div className="absolute w-[255.65px] h-[277.05px] right-4 rotate-[13.51deg] bottom-60 bg-gradient-blue opacity-60 blur-[174px]" />
+      <div className="absolute w-44 h-48 left-4 top-60 bg-gradient-green opacity-60 blur-[90px]" />
+      <div className="absolute w-44 h-48 right-4 bottom-60 bg-gradient-blue opacity-60 blur-[90px]" />
       <div className="text-white mt-[calc(20vh)]">
         <p className="text-bodytext">Hi all. I am</p>
         <p className="text-headline">Juan P. Ferro</p>
