@@ -9,7 +9,8 @@
       "@logos/*": ["assets/logos/*"],
       "@context/*": ["context/*"],
       "@styles/*": ["styles/*"],
-      "@hooks/*": ["hooks/*"]
+      "@hooks/*": ["hooks/*"],
+      "@images/*": ["assets/images/*"],
     }
   }
 }

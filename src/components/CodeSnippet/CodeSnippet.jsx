@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { CodeBlock, dracula } from "react-code-blocks";
+import Image from "next/image";
 import ChatIcon from "@components/IconsComponents/ChatIcon";
 import CloseIcon from "@components/IconsComponents/CloseIcon";
+import profilePic from "@images/profile.jpg";
 
 const CodeSnippet = () => {
   const [showDetails, setShowDetails] = useState(false);
@@ -26,9 +28,16 @@ const CodeSnippet = () => {
     <div className="space-y-3">
       <div className="flex w-full justify-between">
         <div className="flex">
-          <div className="h-9 w-9 rounded-full border"></div>
+          <Image
+            src={profilePic}
+            alt="profile-pictrue"
+            height={36}
+            width={36}
+            objectFit="cover"
+            className="rounded-full"
+          />
           <div className="pl-2">
-            <p className="text-snippets">@username</p>
+            <p className="text-snippets">@jf3rr0</p>
             <p className="text-[12px] text-gray">{data.date}</p>
           </div>
         </div>
