@@ -4,7 +4,7 @@ import Nav from "@components/Nav/Nav";
 const Layout = ({ children }) => {
   return (
     <div className="h-screen w-full p-4 bg-black font-monospace">
-      <div className="h-full w-full border border-lines rounded-lg bg-blue relative">
+      <div className="h-full w-full border border-lines rounded-lg bg-blue relative overflow-auto">
         <Nav />
         {children}
       </div>
