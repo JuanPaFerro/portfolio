@@ -1,18 +1,23 @@
 import React, { useState } from "react";
-import {CodeBlock, dracula } from "react-code-blocks";
+import { CodeBlock, dracula } from "react-code-blocks";
 import ChatIcon from "@components/IconsComponents/ChatIcon";
 import CloseIcon from "@components/IconsComponents/CloseIcon";
 
 const CodeSnippet = () => {
   const [showDetails, setShowDetails] = useState(false);
   const data = {
-    code: `function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {
-            const value: T = parseModel(chunk._response, chunk._value);
-            const initializedChunk: InitializedChunk<T> = (chunk: any);
-            initializedChunk._status = INITIALIZED;
-            initializedChunk._value = value;
-            return value;
-          }`,
+    code: `const bucketSort = (arr, size = 5) => {
+      const min = Math.min(...arr);
+      const max = Math.max(...arr);
+      const buckets = Array.from(
+        { length: Math.floor((max - min) / size) + 1 },
+        () => []
+      );
+      arr.forEach(val => {
+        buckets[Math.floor((val - min) / size)].push(val);
+      });
+      return buckets.reduce((acc, b) => [...acc, ...b.sort((a, b) => a - b)], []);
+    };`,
     details: `My work here was 5 months ago. It was for the project called “...”. Some other text can be placed here.`,
     date: "5 months ago",
     stars: "3",
@@ -37,23 +42,14 @@ const CodeSnippet = () => {
           <p>details</p>
         </div>
       </div>
-      <div className="border rounded-xl h-52 border-lines text-snippets overflow-auto bg-darker-blue">
+      <div className="border rounded-xl h-52 p-3 border-lines text-snippets overflow-auto bg-[#282a36]">
         <CodeBlock
-          text={`const sum = pipeAsyncFunctions(
-            x => x + 1,
-            x => new Promise(resolve => setTimeout(() => resolve(x + 2), 1000)),
-            x => x + 3,
-            async x => (await x) + 4
-          );
-          (async() => {
-            console.log(await sum(5)); // 15 (after one second)
-          })();`}
+          text={data.code}
           language="javascript"
           showLineNumbers={false}
           theme={dracula}
           customStyle={{
             height: "100%",
-            padding: "0.5rem",
           }}
         />
       </div>
