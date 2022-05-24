@@ -1,9 +1,10 @@
 import React from "react";
 import Head from "next/head";
 import Footer from "@components/Footer/Footer";
-import Image from "next/image";
-import arrowDown from "@icons/arrow-down.svg";
-import arrowRight from "@icons/arrow-right.svg";
+import PersonalInfo from "@components/PersonalInfo/PersonalInfo";
+import ProfessionalInfo from "@components/ProfessionalInfo/ProfessionalInfo";
+import HobbiesInfo from "@components/HobbiesInfo/HobbiesInfo";
+import ContactsInfo from "@components/ContactsInfo/ContactsInfo";
 
 const About = () => {
   return (
@@ -16,22 +17,10 @@ const About = () => {
           <p>_about-me</p>
         </div>
         <div className="h-auto w-full flex flex-col space-y-1 text-white text-snippets">
-          <div className="w-full h-8 px-2 bg-lines flex items-center space-x-1">
-            <Image src={arrowRight} alt="arrow pointing right" />
-            <p>personal-info</p>
-          </div>
-          <div className="w-full h-8 px-2 bg-lines flex items-center space-x-1">
-            <Image src={arrowRight} alt="arrow pointing right" />
-            <p>professional-info</p>
-          </div>
-          <div className="w-full h-8 px-2 bg-lines flex items-center space-x-1">
-            <Image src={arrowRight} alt="arrow pointing right" />
-            <p>hobbies</p>
-          </div>
-          <div className="w-full h-8 px-2 bg-lines flex items-center space-x-1">
-            <Image src={arrowRight} alt="arrow pointing right" />
-            <p>contacts</p>
-          </div>
+          <PersonalInfo />
+          <ProfessionalInfo />
+          <HobbiesInfo />
+          <ContactsInfo />
         </div>
       </section>
       <Footer />
