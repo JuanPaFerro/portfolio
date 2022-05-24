@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {CodeBlock, dracula } from "react-code-blocks";
 import ChatIcon from "@components/IconsComponents/ChatIcon";
 import CloseIcon from "@components/IconsComponents/CloseIcon";
 
@@ -36,8 +37,25 @@ const CodeSnippet = () => {
           <p>details</p>
         </div>
       </div>
-      <div className="border rounded-xl border-lines h-52 p-6 text-snippets overflow-auto bg-darker-blue">
-        <div>code here</div>
+      <div className="border rounded-xl h-52 border-lines text-snippets overflow-auto bg-darker-blue">
+        <CodeBlock
+          text={`const sum = pipeAsyncFunctions(
+            x => x + 1,
+            x => new Promise(resolve => setTimeout(() => resolve(x + 2), 1000)),
+            x => x + 3,
+            async x => (await x) + 4
+          );
+          (async() => {
+            console.log(await sum(5)); // 15 (after one second)
+          })();`}
+          language="javascript"
+          showLineNumbers={false}
+          theme={dracula}
+          customStyle={{
+            height: "100%",
+            padding: "0.5rem",
+          }}
+        />
       </div>
       {showDetails && (
         <div className=" text-gray text-snippets space-y-2">
