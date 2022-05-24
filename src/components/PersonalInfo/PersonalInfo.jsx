@@ -12,14 +12,14 @@ const PersonalInfo = () => {
   return (
     <>
       <div
-        className="w-full h-8 px-2 bg-lines flex items-center space-x-1 cursor-pointer"
+        className="w-full h-8 px-4 bg-lines flex items-center space-x-1 cursor-pointer"
         onClick={() => setShowPersonal((prev) => !prev)}
       >
         <ArrowIcon isActive={showPersonal} />
         <p>personal-info</p>
       </div>
       {showPersonal && (
-        <div className="mt-2 px-2 space-y-2 h-auto w-full pb-2 ">
+        <div className="mt-2 px-4 space-y-2 h-auto w-full pb-2 ">
           <div
             className="flex py-1 space-x-2 text-label cursor-pointer"
             onClick={() => setShowBio((prev) => !prev)}

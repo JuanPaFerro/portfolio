@@ -6,7 +6,7 @@ const ContactsInfo = () => {
   return (
     <>
       <div
-        className="w-full h-8 px-2 bg-lines flex items-center space-x-1 cursor-pointer"
+        className="w-full h-8 px-4 bg-lines flex items-center space-x-1 cursor-pointer"
         onClick={() => setShowContacts((prev) => !prev)}
       >
         <ArrowIcon isActive={showContacts} />

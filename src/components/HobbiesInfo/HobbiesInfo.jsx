@@ -6,7 +6,7 @@ const HobbiesInfo = () => {
   return (
     <>
       <div
-        className="w-full h-8 px-2 bg-lines flex items-center space-x-1 cursor-pointer"
+        className="w-full h-8 px-4 bg-lines flex items-center space-x-1 cursor-pointer"
         onClick={() => setShowHobbies((prev) => !prev)}
       >
         <ArrowIcon isActive={showHobbies} />
