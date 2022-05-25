@@ -20,7 +20,7 @@ const Menu = ({ setShowMenu }) => {
             _about-me
           </p>
         </Link>
-        <Link href="/">
+        <Link href="/projects">
           <p className="h-12 flex items-center text-white text-label pl-4 border-b border-b-lines">
             _projects
           </p>
