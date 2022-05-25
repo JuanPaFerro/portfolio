@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "@context/Context";
 import Head from "next/head";
 import Footer from "@components/Footer/Footer";
 import PersonalInfo from "@components/PersonalInfo/PersonalInfo";
@@ -8,14 +9,7 @@ import ContactsInfo from "@components/ContactsInfo/ContactsInfo";
 import CodeSnippet from "@components/CodeSnippet/CodeSnippet";
 
 const About = () => {
-  const data = {
-    root: "personal-info",
-    folder: "bio",
-    content: `I have 5 years of experience in web development lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat officia deserunt mollit anim id est laborum.
-  `,
-  };
+  const { aboutInfo } = useContext(Context);
   return (
     <>
       <Head>
@@ -33,13 +27,13 @@ const About = () => {
         </div>
         <div className="pt-8 space-y-4 text-gray px-6 ">
           <div className="flex text-label space-x-3">
-            <p className="text-white ">{`// ${data.root}`}</p>
-            <p>{`/ ${data.folder}`}</p>
+            <p className="text-white ">{`// ${aboutInfo.root}`}</p>
+            <p>{`/ ${aboutInfo.file}`}</p>
           </div>
-          <p>{data.content}</p>
+          <p>{aboutInfo.content}</p>
         </div>
         <div className="px-6 pt-6 space-y-4 text-white text-label">
-          <p className="">{`//`} Code snippet showcase:</p>
+          <p>{`//`} Code snippet showcase:</p>
           <CodeSnippet />
         </div>
       </section>

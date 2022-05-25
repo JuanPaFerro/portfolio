@@ -14,7 +14,7 @@ const Nav = () => {
         onClick={() => setShowMenu((prev) => !prev)}
         alt="menu toggler icon"
       />
-      {showMenu && <Menu></Menu>}
+      {showMenu && <Menu setShowMenu={setShowMenu} />}
     </nav>
   );
 };
