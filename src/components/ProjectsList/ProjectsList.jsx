@@ -20,7 +20,7 @@ const ProjectsList = () => {
       );
       setFilteredProjects(newProjects);
     }
-  }, [filter]);
+  }, [filter, projects]);
 
   return (
     <>

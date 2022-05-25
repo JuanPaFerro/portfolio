@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
         <p>{`/ ${project.subtitle}`}</p>
       </div>
       <div className="h-80 w-72 border border-lines rounded-xl overflow-hidden">
-        <div className="h-2/5 rounded-t-xl border-b border-lines relative">
+        <div className="h-2/5 rounded-t-xl overflow-hidden border-b border-lines relative">
           <Image
             src={project.image}
             alt={`image of project ${project.title}`}
