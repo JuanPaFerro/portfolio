@@ -3,7 +3,7 @@ import React from "react";
 const TechnologyIcon = ({ type }) => {
   if (type === "react") {
     return (
-      <div className="h-8 w-8 rounded-sm overflow-hidden bg-[#86E1F9] flex items-center justify-center absolute top-4 right-4 z-10">
+      <div className="h-8 w-8 rounded-sm overflow-hidden bg-[#86E1F9] flex items-center justify-center absolute top-4 right-4 ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -18,7 +18,7 @@ const TechnologyIcon = ({ type }) => {
   }
   if (type === "angular") {
     return (
-      <div className="h-8 w-8 rounded-sm overflow-hidden bg-[#F2A9B9] flex items-center justify-center  absolute top-3 right-3 z-10">
+      <div className="h-8 w-8 rounded-sm overflow-hidden bg-[#F2A9B9] flex items-center justify-center  absolute top-3 right-3 ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"

@@ -41,9 +41,11 @@ const ProjectsList = () => {
             {`/ `} {filter.length === 0 ? "all" : filter}
           </p>
         </div>
-        {filteredProjects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
-        ))}
+        <div className="flex items-center flex-col space-y-5">
+          {filteredProjects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
+        </div>
       </div>
     </>
   );
