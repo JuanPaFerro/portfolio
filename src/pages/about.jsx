@@ -15,7 +15,7 @@ const About = () => {
       <Head>
         <title>about-me</title>
       </Head>
-      <section className="pb-12">
+      <section className="mb-16">
         <div className="flex h-16 w-full pl-6 text-white text-snippets items-center">
           <p>_about-me</p>
         </div>

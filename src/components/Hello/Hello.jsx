@@ -2,7 +2,7 @@ import React from "react";
 
 const Hello = () => {
   return (
-    <section className="w-full px-4 flex flex-col justify-between">
+    <section className=" w-full px-4 flex flex-col space-y-36 pb-40">
       <div className="absolute w-44 h-48 left-4 top-60 bg-gradient-green opacity-60 blur-[90px]" />
       <div className="absolute w-44 h-48 right-4 bottom-60 bg-gradient-blue opacity-60 blur-[90px]" />
       <div className="text-white mt-[calc(20vh)]">

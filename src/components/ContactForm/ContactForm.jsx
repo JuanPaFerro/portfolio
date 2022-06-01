@@ -59,7 +59,7 @@ const ContactInfo = () => {
               ref={refName}
               type="text"
               name="name"
-              className="h-10 bg-darker-blue border border-lines rounded-lg"
+              className="h-10 px-2 bg-darker-blue border border-lines rounded-lg"
             />
           </div>
           <div className="flex flex-col space-y-2">
@@ -68,15 +68,15 @@ const ContactInfo = () => {
               ref={refEmail}
               type="email"
               name="email"
-              className="h-10 bg-darker-blue border border-lines rounded-lg"
+              className="h-10 px-2 bg-darker-blue border border-lines rounded-lg"
             />
           </div>
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-2 pb-2">
             <label htmlFor="message">_message</label>
             <textarea
               ref={refMessage}
               name="message"
-              className="h-36 bg-darker-blue border border-lines rounded-lg"
+              className="h-36 p-2 bg-darker-blue border border-lines rounded-lg"
             />
           </div>
 
