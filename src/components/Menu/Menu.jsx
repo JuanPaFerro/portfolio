@@ -25,7 +25,7 @@ const Menu = ({ setShowMenu }) => {
             _projects
           </p>
         </Link>
-        <Link href="/">
+        <Link href="/contact">
           <p className="h-12 flex items-center text-white text-label pl-4 border-b border-b-lines">
             _contact-me
           </p>

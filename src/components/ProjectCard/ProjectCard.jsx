@@ -23,11 +23,15 @@ const ProjectCard = ({ project }) => {
         </div>
         <div className="h-3/5 flex flex-col p-8 space-y-5 text-label text-gray bg-darker-blue">
           <p className="h-3/5 overflow-auto">{project.details}</p>
-          <Link href={project.link}>
-            <div className="h-9 w-32 text-snippets text-white flex items-center justify-center rounded-lg cursor-pointer bg-[#1C2B3A] hover:bg-[#263B50]">
-              <p>view-project</p>
-            </div>
-          </Link>
+          {project.link === "" ? (
+            <p className="text-orange text-[10px]">This project is property of the company I was working for during its development.</p>
+          ) : (
+            <Link href={project.link}>
+              <div className="h-9 w-32 text-snippets text-white flex items-center justify-center rounded-lg cursor-pointer bg-[#1C2B3A] hover:bg-[#263B50]">
+                <p>view-project</p>
+              </div>
+            </Link>
+          )}
         </div>
       </div>
     </div>

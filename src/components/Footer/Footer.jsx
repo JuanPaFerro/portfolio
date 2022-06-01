@@ -5,7 +5,7 @@ import twitter from "@icons/twitter.svg";
 import facebook from "@icons/facebook.svg";
 import github from "@icons/github.svg";
 
-const Footer = ({ isMenu}) => {
+const Footer = ({ isMenu }) => {
   return (
     <footer
       className={`h-12 w-full border-t items-center border-t-lines flex justify-between bottom-0 ${

@@ -54,12 +54,18 @@ nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
       image: "https://i.postimg.cc/Y0BtcBvQ/aerostore-screenshot.png",
       details:
         "Duis aute irure dolor in velit esse cillum incididunt ut labore.",
-      link: "",
+      link: "https://aero-store.vercel.app/",
       technology: "react",
     },
   ];
+  const contactLinks = [
+    { name: "Link 1", link: "https://link.example.com" },
+    { name: "Link 2", link: "https://link.example.com" },
+    { name: "Link 3", link: "https://link.example.com" },
+    { name: "Link 4", link: "https://link.example.com" },
+  ];
 
-  const value = { aboutInfo, setAboutInfo, projects };
+  const value = { aboutInfo, setAboutInfo, projects, contactLinks };
 
   return <Context.Provider value={value}>{children}</Context.Provider>;
 };

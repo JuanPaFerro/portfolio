@@ -1,9 +1,9 @@
 import React, { useState, useContext, useEffect } from "react";
-import ProjectCard from "@components/ProjectCard/ProjectCard";
-import CheckboxIcon from "@components/IconsComponents/CheckboxIcon";
-import { ArrowIcon } from "@components/IconsComponents/ArrowIcon";
-import TechnologyFilterIcon from "@components/IconsComponents/TechnologyFilterIcon";
 import { Context } from "@context/Context";
+import ProjectCard from "@components/ProjectCard/ProjectCard";
+import { ArrowIcon } from "@components/IconsComponents/ArrowIcon";
+import CheckboxIcon from "@components/IconsComponents/CheckboxIcon";
+import TechnologyFilterIcon from "@components/IconsComponents/TechnologyFilterIcon";
 
 const ProjectsList = () => {
   const [filter, setFilter] = useState("");
