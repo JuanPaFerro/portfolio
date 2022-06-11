@@ -31,7 +31,6 @@ const Menu = ({ setShowMenu }) => {
           </p>
         </Link>
       </div>
-      <Footer isMenu={true} />
     </section>
   );
 };

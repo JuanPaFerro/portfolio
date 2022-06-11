@@ -6,9 +6,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <div className="h-screen w-full p-4 bg-black font-monospace overflow-auto">
-        <div className="min-h-full w-full border border-lines rounded-lg bg-blue relative overflow-auto">
+        <div className="w-full border border-lines rounded-lg bg-blue relative overflow-auto">
           <Nav />
           {children}
+          <Footer/>
         </div>
       </div>
     </>

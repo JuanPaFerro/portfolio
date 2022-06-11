@@ -37,7 +37,6 @@ const About = () => {
           <CodeSnippet />
         </div>
       </section>
-      <Footer />
     </>
   );
 };

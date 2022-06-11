@@ -17,7 +17,6 @@ const Projects = () => {
           <ProjectsList />
         </div>
       </section>
-      <Footer />
     </>
   );
 };

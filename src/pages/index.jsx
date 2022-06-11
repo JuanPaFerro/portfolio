@@ -1,3 +1,4 @@
+import Footer from "@components/Footer/Footer";
 import Hello from "@components/Hello/Hello";
 import Head from "next/head";
 

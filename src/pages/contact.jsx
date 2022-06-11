@@ -17,7 +17,6 @@ const contact = () => {
           <ContactInfo />
         </div>
       </section>
-      <Footer />
     </>
   );
 };

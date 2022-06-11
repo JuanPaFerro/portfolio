@@ -54,7 +54,7 @@ const ProjectsList = () => {
 const Filters = ({ filter, setFilter }) => (
   <div className="flex flex-col px-6 space-y-2">
     <div
-      className="flex space-x-3 h-6 items-center text-white text-label"
+      className="flex space-x-3 h-6 items-center text-white text-label cursor-pointer"
       onClick={() => (filter === "React" ? setFilter("") : setFilter("React"))}
     >
       <CheckboxIcon isActive={filter === "React" ? true : false} />
@@ -65,7 +65,7 @@ const Filters = ({ filter, setFilter }) => (
     </div>
 
     <div
-      className="flex space-x-3 h-6 items-center text-white text-label"
+      className="flex space-x-3 h-6 items-center text-white text-label cursor-pointer"
       onClick={() =>
         filter === "Angular" ? setFilter("") : setFilter("Angular")
       }
