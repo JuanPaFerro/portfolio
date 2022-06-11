@@ -2,12 +2,12 @@ import React from "react";
 
 const Hello = () => {
   return (
-    <section className="flex justify-center">
+    <section className="flex justify-center lg:h-[87vh]">
       <div className="absolute w-44 h-48 left-4 top-60 lg:left-[unset] lg:right-[26rem] lg:top-40 bg-gradient-green opacity-60 blur-[90px]" />
       <div className="absolute w-44 h-48 right-4 bottom-60 lg:right-60 lg:bottom-40 bg-gradient-blue opacity-60 blur-[90px]" />
 
-      <div className=" w-full px-4 flex flex-col space-y-34 pb-40 lg:w-1/3 lg:space-y-20 lg:px-0 lg:pb-24">
-        <div className="text-white mt-40 lg:mt-24">
+      <div className=" w-full px-4 flex flex-col space-y-34 pb-40 lg:justify-center lg:w-1/3 lg:space-y-24 lg:p-0">
+        <div className="text-white mt-40 lg:mt-0">
           <p className="text-bodytext">Hi all. I am</p>
           <p className="text-headline">Juan P. Ferro</p>
           <p className="text-gradient-green text-bodytext">

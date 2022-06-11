@@ -10,12 +10,12 @@ const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
   const router = useRouter();
   return (
-    <nav className="h-12 w-full border-b border-b-lines flex justify-between px-4 items-center text-gray text-label">
-      <div className="w-72">
+    <nav className="h-12 w-full border-b border-b-lines flex justify-between items-center text-gray text-label z-10 bg-blue px-4 lg:px-0">
+      <div className="w-72 lg:shrink-0 h-full flex items-center lg:pr-0 lg:pl-4 lg:border-r border-lines">
         <p>juan-pablo-ferro</p>
       </div>
 
-      <div className="hidden lg:flex border-l border-lines w-full justify-between">
+      <div className="hidden lg:flex border-lines w-full justify-between">
         <div className="flex">
           <Link href="/">
             <p
@@ -52,7 +52,7 @@ const Nav = () => {
 
         <Link href="/contact">
           <p
-            className={`cursor-pointer h-12 flex items-center border-l border-lines text-label pl-4 border-b border-b-lines ${
+            className={`cursor-pointer h-12 flex items-center border-l border-lines text-label px-4 border-b border-b-lines ${
               router.pathname === "/contact" && "text-white"
             }`}
           >

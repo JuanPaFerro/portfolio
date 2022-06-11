@@ -11,7 +11,7 @@ const PersonalInfo = () => {
   return (
     <>
       <div
-        className="w-full h-8 px-4 bg-lines flex items-center space-x-1 cursor-pointer"
+        className="w-full h-8 px-4 bg-lines flex items-center space-x-1 cursor-pointer lg:bg-opacity-0 lg:border-b lg:border-lines"
         onClick={() => setShowPersonal((prev) => !prev)}
       >
         <ArrowIcon isActive={showPersonal} />
