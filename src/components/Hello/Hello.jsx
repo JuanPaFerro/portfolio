@@ -1,3 +1,4 @@
+import SnakeGame from "@components/SnakeGame/SnakeGame";
 import React from "react";
 
 const Hello = () => {
@@ -6,7 +7,7 @@ const Hello = () => {
       <div className="absolute w-44 h-48 left-4 top-60 lg:left-[unset] lg:right-[26rem] lg:top-40 bg-gradient-green opacity-60 blur-[90px]" />
       <div className="absolute w-44 h-48 right-4 bottom-60 lg:right-60 lg:bottom-40 bg-gradient-blue opacity-60 blur-[90px]" />
 
-      <div className=" w-full px-4 flex flex-col space-y-34 pb-40 lg:justify-center lg:w-1/3 lg:space-y-24 lg:p-0">
+      <div className=" w-full px-4 flex flex-col space-y-34 pb-40 lg:justify-center lg:w-2/5 lg:space-y-24 lg:p-0">
         <div className="text-white mt-40 lg:mt-0">
           <p className="text-bodytext">Hi all. I am</p>
           <p className="text-headline">Juan P. Ferro</p>
@@ -30,7 +31,9 @@ const Hello = () => {
         </div>
       </div>
 
-      <div className="border hidden lg:flex w-1/3 h-auto">code snippets</div>
+      <div className="hidden lg:flex w-2/5 h-auto pb-12 items-center">
+        <SnakeGame />
+      </div>
     </section>
   );
 };
