@@ -9,11 +9,11 @@ const Projects = () => {
       <Head>
         <title>projects</title>
       </Head>
-      <section className="mb-16">
-        <div className="flex h-16 w-full pl-6 text-white text-snippets items-center">
+      <section className="mb-16 lg:flex lg:m-0 lg:h-[87vh]">
+        <div className="flex h-16 w-full pl-6 text-white text-snippets items-center lg:hidden">
           <p>_projects</p>
         </div>
-        <div className="h-auto w-full flex flex-col space-y-1">
+        <div className="h-auto w-full flex flex-col space-y-1 lg:space-y-0 lg:flex-row">
           <ProjectsList />
         </div>
       </section>

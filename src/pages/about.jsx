@@ -29,7 +29,7 @@ const About = () => {
           <div className="hidden lg:flex items-center h-8 border-b border-lines">
             <div className="flex space-x-8 items-center pl-4 pr-2 border-r border-lines h-full">
               <p>{aboutInfo.root}</p>
-              <p className="text-[12px] font-bold">x</p>
+              <p className="text-[12px] font-medium">x</p>
             </div>
           </div>
           <div className="flex text-label space-x-3 lg:px-6">
