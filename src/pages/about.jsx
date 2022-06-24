@@ -32,11 +32,11 @@ const About = () => {
               <p className="text-[12px] font-medium">x</p>
             </div>
           </div>
-          <div className="flex text-label space-x-3 lg:px-6">
+          <div className="flex text-label space-x-3 lg:px-12">
             <p className="text-white ">{`// ${aboutInfo.root}`}</p>
             <p>{`/ ${aboutInfo.file}`}</p>
           </div>
-          <p className="lg:px-6">{aboutInfo.content}</p>
+          <div className="lg:px-12">{aboutInfo.content.trim().split('.').map((el, index)=> <p key={index}>{`${el}.`}</p>)}</div>
         </div>
 
         <div className="lg:pt-0 lg:px-0 lg:w-2/5 lg:shrink-0 lg:h-full lg:pb-20 lg:overflow-y-auto ">

@@ -22,7 +22,7 @@ const ProjectCard = ({ project }) => {
           <TechnologyIcon type={project.technology} />
         </div>
         <div className="h-3/5 flex flex-col p-8 space-y-5 text-label text-gray bg-darker-blue">
-          <p className="h-3/5 overflow-auto">{project.details}</p>
+          <p className={`h-3/5 overflow-auto`}>{project.details}</p>
           {project.link === "" ? (
             <p className="text-orange text-[10px]">This project is property of the company I was working for during its development.</p>
           ) : (

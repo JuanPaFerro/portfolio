@@ -20,7 +20,7 @@ const PersonalInfo = () => {
       {showPersonal && (
         <div className="mt-2 px-4 space-y-2 h-auto w-full pb-2 ">
           <Bio />
-          <Interests />
+          {/* <Interests /> */}
           <Education />
         </div>
       )}
@@ -50,10 +50,9 @@ const Education = () => {
       root: "personal-info",
       folder: "education",
       file: "university",
-      content: `Im a Software Engineer who graduated from University of Pinar del Rio lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat officia deserunt mollit anim id est laborum.
-    `,
+      content: `I am a Software Engineer graduated from the University of Pinar del Río Hermanos Saiz Montes de Oca, in July 2020.
+      During 5 courses I was discovering, step by step, the exciting technological world and cultivating a deep love for learning and understanding new technologies.
+      Since my second year as a student I was involved in university projects, where I gained a lot of experience and was able to improve not only my technical skills, but also learned to work as a team`,
     });
   };
   return (
@@ -90,10 +89,8 @@ const Bio = () => {
       root: "personal-info",
       folder: "bio",
       file: "bio",
-      content: `I have 5 years of experience in web development lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat officia deserunt mollit anim id est laborum.
-    `,
+      content: `Hello, my name is Juan Pablo Ferro. I am a 26-year-old software engineer who graduated from University of Pinar del Rio in July 2020.
+      In September 2020 I started working at Desoft, one of the most important tech corporations on the country & Leaders at development of high-tech solutions for national and foreign companies`,
     });
   };
   return (

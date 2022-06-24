@@ -51,7 +51,7 @@ const CodeSnippet = () => {
           <p>details</p>
         </div>
       </div>
-      <div className="border rounded-xl h-52 p-3 border-lines text-snippets overflow-auto bg-[#282a36]">
+      <div className="border rounded-xl h-52 p-3 border-lines text-snippets overflow-auto bg-darker-blue">
         <CodeBlock
           text={data.code}
           language="javascript"
@@ -59,6 +59,7 @@ const CodeSnippet = () => {
           theme={dracula}
           customStyle={{
             height: "100%",
+            backgroundColor: "transparent",
           }}
         />
       </div>
