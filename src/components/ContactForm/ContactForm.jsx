@@ -98,7 +98,7 @@ const ContactForm = () => {
         <div className="lg:h-full lg:flex lg:pt-12 lg:justify-center lg:w-2/5">
           {showForm ? (
             <form
-              className="pl-6 text-gray text-label space-y-3 "
+              className="px-6 lg:px-0 lg:pl-6 text-gray text-label space-y-3 "
               onSubmit={(event) => handleSubmit(event)}
             >
               <div className="flex flex-col space-y-2">

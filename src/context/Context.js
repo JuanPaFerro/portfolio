@@ -34,7 +34,7 @@ export const Provider = ({ children }) => {
       subtitle: "_analytics",
       image: "https://i.postimg.cc/2jsCVSdK/analytics.jpg",
       details:
-        "Duis aute irure dolor in velit esse cillum incididunt ut labore.",
+        "An analytical services module for the EPROG v2.0 system. It allows programming editors to quickly and accurately have relevant information about their television channels.",
       link: "",
       technology: "angular",
     },
@@ -52,7 +52,7 @@ export const Provider = ({ children }) => {
       subtitle: "_e-shop",
       image: "https://i.postimg.cc/Y0BtcBvQ/aerostore-screenshot.png",
       details:
-        "Duis aute irure dolor in velit esse cillum incididunt ut labore.",
+        "E-commerce style page based on a system of loyalty points redeemable for products.",
       link: "https://aero-store.vercel.app/",
       technology: "react",
     },
