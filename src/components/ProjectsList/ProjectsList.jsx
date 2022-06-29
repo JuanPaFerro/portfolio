@@ -47,7 +47,7 @@ const ProjectsList = () => {
             <p className="text-[12px] font-medium">x</p>
           </div>
         </div>
-        <div className="flex items-center flex-col space-y-5 lg:grid lg:grid-cols-3 lg:space-y-0 lg:gap-5  lg:overflow-auto  lg:px-10 lg:pt-10 lg:pb-20">
+        <div className="flex items-center lg:items-start flex-col space-y-5 lg:grid lg:grid-cols-3 lg:space-y-0 lg:gap-5  lg:overflow-auto  lg:px-10 lg:pt-10 lg:pb-20">
           {filteredProjects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}

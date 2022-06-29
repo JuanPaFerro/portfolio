@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import twitter from "@icons/twitter.svg";
+import platzi from "@icons/platzi.svg";
 import linkedin from "@icons/linkedin.svg";
 import github from "@icons/github.svg";
 
@@ -16,20 +16,34 @@ const Footer = () => {
       </div>
       <div className="flex h-full text-gray lg:w-full lg:justify-between">
         <div className="flex lg:border-r border-lines">
-          <div className="cursor-pointer border-l lg:border-l-0 border-l-lines w-12 h-full flex items-center justify-center">
-            <a href="https://www.twitter.com/jf3rr0">
-              <Image src={twitter} alt="twitter icon" />
+          <div className="cursor-pointer border-l lg:border-l-0 border-l-lines w-12 h-full flex items-center justify-center pt-1">
+            <a href="https://platzi.com/p/jpferroa96/" target="blank">
+              <Image src={platzi} alt="twitter icon" />
             </a>
           </div>
           <div className="border-l border-l-lines w-12 h-full flex items-center justify-center">
-            <a href="https://www.linkedin.com/in/juan-pablo-ferro">
+            <a
+              href="https://www.linkedin.com/in/juan-pablo-ferro"
+              target="blank"
+            >
               <Image src={linkedin} alt="linkedin icon" />
             </a>
           </div>
         </div>
+        <div className="hidden h-full lg:flex justify-center items-center space-x-2">
+          <span>Designed by</span>
+          <a
+            href="https://twitter.com/YankaDarelova"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gradient-blue"
+          >
+            @YankaDarelova
+          </a>
+        </div>
         <div className="border-l border-l-lines w-12 h-full flex items-center justify-center lg:w-48 cursor-pointer">
           <p className="hidden pr-3 lg:block">@JuanPaFerro</p>
-          <a href="https://github.com/JuanPaFerro">
+          <a href="https://github.com/JuanPaFerro" target="blank">
             <Image src={github} alt="github icon" />
           </a>
         </div>

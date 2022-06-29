@@ -11,8 +11,8 @@ const ProjectCard = ({ project }) => {
         <p className="text-gradient-blue font-bold">{project.title}</p>
         <p>{`/ ${project.subtitle}`}</p>
       </div>
-      <div className="h-80 w-72 border border-lines rounded-xl overflow-hidden">
-        <div className="h-2/5 rounded-t-xl overflow-hidden border-b border-lines relative">
+      <div className="w-72 border border-lines rounded-xl overflow-hidden">
+        <div className="h-40 rounded-t-xl overflow-hidden border-b border-lines relative">
           <Image
             src={project.image}
             alt={`image of project ${project.title}`}
@@ -21,10 +21,10 @@ const ProjectCard = ({ project }) => {
           />
           <TechnologyIcon type={project.technology} />
         </div>
-        <div className="h-3/5 flex flex-col p-8 space-y-5 text-label text-gray bg-darker-blue">
-          <p className={`h-3/5 overflow-auto`}>{project.details}</p>
+        <div className=" flex flex-col p-8 space-y-5 text-label text-gray bg-darker-blue">
+          <p className={``}>{project.details}</p>
           {project.link === "" ? (
-            <p className="text-orange text-[10px]">This project is property of the company I was working for during its development.</p>
+            <p className="text-orange text-[10px]">This project is property of Desoft.</p>
           ) : (
             <Link href={project.link}>
               <div className="h-9 w-32 text-snippets text-white flex items-center justify-center rounded-lg cursor-pointer bg-[#1C2B3A] hover:bg-[#263B50]">
