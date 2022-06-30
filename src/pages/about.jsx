@@ -3,8 +3,6 @@ import { Context } from "@context/Context";
 import Head from "next/head";
 import PersonalInfo from "@components/PersonalInfo/PersonalInfo";
 import ProfessionalInfo from "@components/ProfessionalInfo/ProfessionalInfo";
-import HobbiesInfo from "@components/HobbiesInfo/HobbiesInfo";
-import ContactsInfo from "@components/ContactsInfo/ContactsInfo";
 import CodeSnippet from "@components/CodeSnippet/CodeSnippet";
 
 const About = () => {
@@ -21,8 +19,6 @@ const About = () => {
         <div className="w-full flex flex-col space-y-1 text-white text-label lg:space-y-0 lg:w-72 lg:shrink-0 lg:border-r lg:border-r-lines lg:h-full">
           <PersonalInfo />
           <ProfessionalInfo />
-          <HobbiesInfo />
-          <ContactsInfo />
         </div>
 
         <div className="pt-8 space-y-4 text-gray px-6 lg:px-0 lg:pt-0 lg:h-full lg:pb-20 lg:overflow-auto lg:border-r border-lines">

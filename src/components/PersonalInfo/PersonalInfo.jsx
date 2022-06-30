@@ -18,7 +18,7 @@ const PersonalInfo = () => {
         <p>personal-info</p>
       </div>
       {showPersonal && (
-        <div className="mt-2 px-4 space-y-2 h-auto w-full pb-2 ">
+        <div className="mt-2 px-4 space-y-2 h-auto w-full pb-2 border-b border-lines">
           <Bio />
           {/* <Interests /> */}
           <Education />
@@ -28,20 +28,6 @@ const PersonalInfo = () => {
   );
 };
 
-//Interests
-const Interests = () => {
-  const [showInterests, setShowInterests] = useState(false);
-  return (
-    <div
-      className="flex py-1 space-x-2 text-label text-gray cursor-pointer"
-      onClick={() => setShowInterests((prev) => !prev)}
-    >
-      <ArrowIconSlim isActive={showInterests} />
-      <FolderIcon color={"#43D9AD"} /> <p>interests</p>
-    </div>
-  );
-};
-//Education
 const Education = () => {
   const [showEducation, setShowEducation] = useState(false);
   const { setAboutInfo, aboutInfo } = useContext(Context);
