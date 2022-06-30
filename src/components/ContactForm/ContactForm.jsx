@@ -1,9 +1,8 @@
 import React, { useState, useContext, useRef, useEffect } from "react";
 import { CodeBlock, dracula } from "react-code-blocks";
 import { ArrowIcon } from "@components/IconsComponents/ArrowIcon";
-import LinkIcon from "@components/IconsComponents/LinkIcon";
-import Link from "next/link";
-import { Context } from "@context/Context";
+import MailIcon from "@components/IconsComponents/MailIcon";
+import useSendEmail from "@hooks/useSendEmail";
 
 const ContactForm = () => {
   const [showContacts, setShowContacts] = useState(false);
@@ -11,7 +10,7 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const { contactLinks } = useContext(Context);
+  const sendEmail = useSendEmail;
   const [code, setCode] =
     useState(`const button = document.querySelector('#sendBtn');
 
@@ -36,7 +35,7 @@ const ContactForm = () => {
         .split(" ")
         .map((word, index) => ((index + 1) % 6 === 0 ? word + "\n" : word))
         .join(" ")}",
-      date: "${Date().split(" ").slice(1,4).join(" ")}"
+      date: "${Date().split(" ").slice(1, 4).join(" ")}"
     }
 
     button.addEventListener('click', () => {
@@ -60,6 +59,7 @@ const ContactForm = () => {
       email,
       message,
     };
+    sendEmail(data);
     setShowForm(false);
     console.log(data);
   };
@@ -76,14 +76,12 @@ const ContactForm = () => {
         </div>
         {showContacts && (
           <div className="flex flex-col px-6 space-y-2">
-            {contactLinks.map((link, index) => (
-              <Link href={link.link} key={`${index}-${link.name}`}>
-                <div className="flex py-1 space-x-2 text-label text-gray cursor-pointer">
-                  <LinkIcon />
-                  <p>{link.name}</p>
-                </div>
-              </Link>
-            ))}
+            <a href="https://gmail.com/" target="blank">
+              <div className="flex py-1 space-x-2 text-label text-gray cursor-pointer">
+                <MailIcon />
+                <p className="lg:text-snippets">juanpabloferroarroyo@gmail</p>
+              </div>
+            </a>
           </div>
         )}
       </div>

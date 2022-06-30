@@ -26,11 +26,11 @@ const ProjectCard = ({ project }) => {
           {project.link === "" ? (
             <p className="text-orange text-[10px]">This project is property of Desoft.</p>
           ) : (
-            <Link href={project.link}>
+            <a href={project.link} target="blank">
               <div className="h-9 w-32 text-snippets text-white flex items-center justify-center rounded-lg cursor-pointer bg-[#1C2B3A] hover:bg-[#263B50]">
                 <p>view-project</p>
               </div>
-            </Link>
+            </a>
           )}
         </div>
       </div>

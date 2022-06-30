@@ -57,14 +57,9 @@ export const Provider = ({ children }) => {
       technology: "react",
     },
   ];
-  const contactLinks = [
-    { name: "Link 1", link: "https://link.example.com" },
-    { name: "Link 2", link: "https://link.example.com" },
-    { name: "Link 3", link: "https://link.example.com" },
-    { name: "Link 4", link: "https://link.example.com" },
-  ];
 
-  const value = { aboutInfo, setAboutInfo, projects, contactLinks };
+
+  const value = { aboutInfo, setAboutInfo, projects };
 
   return <Context.Provider value={value}>{children}</Context.Provider>;
 };
