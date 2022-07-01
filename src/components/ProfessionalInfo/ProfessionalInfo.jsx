@@ -34,9 +34,11 @@ const Desoft = () => {
       root: "professional-info",
       folder: "desoft",
       file: "desoft",
-      content: `I started working at desoft in september of 2020 lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat officia deserunt mollit anim id est laborum`,
+      content: `I started working at desoft in September 2020.
+      I immediately joined EprogTV, a national project focused to ease the administration of digital television in the country.
+      During my first months I was carrying out development and maintenance tasks on the project's user interface, with small but increasingly frequent approaches to its backend.
+      Step by step I grew and gained the trust of my manager and colleagues and soon I was in charge of developing the new version of the project.
+      During this time I also carried out a few secondary projects such as the creation of a feedback system and an analytics module with which the productivity of the editors was improved by 87%`,
     });
   };
   return (
