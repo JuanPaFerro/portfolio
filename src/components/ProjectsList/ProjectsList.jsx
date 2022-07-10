@@ -81,6 +81,19 @@ const Filters = ({ filter, setFilter }) => {
         filter={filter}
         handleFilter={handleFilter}
       />
+      <FilterOption tech="HTML" filter={filter} handleFilter={handleFilter} />
+      <FilterOption tech="CSS" filter={filter} handleFilter={handleFilter} />
+      <FilterOption tech="Next" filter={filter} handleFilter={handleFilter} />
+      <FilterOption
+        tech="Javascript"
+        filter={filter}
+        handleFilter={handleFilter}
+      />
+      <FilterOption
+        tech="Tailwind"
+        filter={filter}
+        handleFilter={handleFilter}
+      />
     </div>
   );
 };

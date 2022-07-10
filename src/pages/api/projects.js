@@ -55,7 +55,7 @@ export default function handler(req, res) {
         details:
           "This portfolio was created using NextJS, a ReactJS based framework and TailwindCSS.",
         link: "https://portfolio-juanpaferro.vercel.app",
-        technologies: ["react", "html", "css", "javascript", "tailwind"],
+        technologies: ["react", "html", "css", "javascript", "tailwind", "next"],
       },
     ],
   });
