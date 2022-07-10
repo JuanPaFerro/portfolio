@@ -4,6 +4,7 @@ import ProjectCard from "@components/ProjectCard/ProjectCard";
 import { ArrowIcon } from "@components/IconsComponents/ArrowIcon";
 import CheckboxIcon from "@components/IconsComponents/CheckboxIcon";
 import TechnologyFilterIcon from "@components/IconsComponents/TechnologyFilterIcon";
+import FilterOption from "@components/FilterOption/FilterOption";
 
 const ProjectsList = () => {
   const [filter, setFilter] = useState("");
@@ -15,9 +16,12 @@ const ProjectsList = () => {
     if (filter === "") {
       setFilteredProjects(projects);
     } else {
-      const newProjects = projects.filter(
-        (project) => project.technology === filter.toLowerCase()
+      const newProjects = projects.filter((project) =>
+        filter
+          .split(",")
+          .every((el) => project.technologies.includes(el.toLowerCase()))
       );
+      console.log(filter.split);
       setFilteredProjects(newProjects);
     }
   }, [filter, projects]);
@@ -57,31 +61,27 @@ const ProjectsList = () => {
   );
 };
 
-const Filters = ({ filter, setFilter }) => (
-  <div className="flex flex-col px-6 space-y-2">
-    <div
-      className="flex space-x-3 h-6 items-center text-white text-label cursor-pointer"
-      onClick={() => (filter === "React" ? setFilter("") : setFilter("React"))}
-    >
-      <CheckboxIcon isActive={filter === "React" ? true : false} />
-      <div className="flex space-x-2">
-        <TechnologyFilterIcon type="react" />
-        <p>React</p>
-      </div>
-    </div>
+const Filters = ({ filter, setFilter }) => {
+  const handleFilter = (word) => {
+    const filtersArray = filter.length > 0 ? filter.split(",") : [];
+    const pos = filtersArray.indexOf(word);
+    if (pos >= 0) {
+      filtersArray.splice(pos, 1);
+    } else {
+      filtersArray.push(word);
+    }
+    setFilter(filtersArray.join());
+  };
 
-    <div
-      className="flex space-x-3 h-6 items-center text-white text-label cursor-pointer"
-      onClick={() =>
-        filter === "Angular" ? setFilter("") : setFilter("Angular")
-      }
-    >
-      <CheckboxIcon isActive={filter === "Angular" ? true : false} />
-      <div className="flex space-x-2">
-        <TechnologyFilterIcon type="angular" />
-        <p>Angular</p>
-      </div>
+  return (
+    <div className="flex flex-col px-6 space-y-2">
+      <FilterOption tech="React" filter={filter} handleFilter={handleFilter} />
+      <FilterOption
+        tech="Angular"
+        filter={filter}
+        handleFilter={handleFilter}
+      />
     </div>
-  </div>
-);
+  );
+};
 export default ProjectsList;
