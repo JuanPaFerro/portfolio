@@ -49,15 +49,6 @@ export default function handler(req, res) {
         technologies: ["react", "html", "css", "javascript"],
       },
       {
-        title: "Portfolio",
-        subtitle: "_portfolio",
-        image: "https://i.ibb.co/5vc7wd8/portfolio.png",
-        details:
-          "This portfolio was created using NextJS, a ReactJS based framework and TailwindCSS.",
-        link: "https://portfolio-juanpaferro.vercel.app",
-        technologies: ["react", "html", "css", "javascript", "tailwind", "next"],
-      },
-      {
         title: "TuAmbia Store",
         subtitle: "_tuambia-store",
         image: "https://i.ibb.co/b2HLNQD/Screenshot-2023-01-18-at-9-10-45-PM.png",
@@ -72,6 +63,14 @@ export default function handler(req, res) {
         details: "Backoffice application for the web store TuAmbia.",
         link: "",
         technologies: ["react", "html", "css", "javascript", "mui", "rhf", "react-query"]
+      },
+      {
+        title: "Lit-Data",
+        subtitle: "_lit-data",
+        image: "https://i.ibb.co/XJbJR2w/Screenshot-2024-02-16-at-1-18-13-AM.png",
+        details: "Innovative web application, designed to provide our clients with extended functionalities beyond conventional survey platforms like SurveyMonkey.",
+        link: "",
+        technologies: ["react", "html", "css", "javascript", "next", "rhf", "react-query"],
       }
     ],
   });

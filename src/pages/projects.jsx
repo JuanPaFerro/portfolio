@@ -13,7 +13,7 @@ const Projects = () => {
         <div className="flex h-16 w-full pl-6 text-white text-snippets items-center lg:hidden">
           <p>_projects</p>
         </div>
-        <div className="h-auto w-full flex flex-col space-y-1 lg:space-y-0 lg:flex-row">
+        <div className="h-full w-full flex flex-col space-y-1 lg:space-y-0 lg:flex-row pb-12">
           <ProjectsList />
         </div>
       </section>

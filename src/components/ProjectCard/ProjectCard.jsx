@@ -24,7 +24,7 @@ const ProjectCard = ({ project }) => {
         <div className=" flex flex-col p-8 space-y-5 text-label text-gray bg-darker-blue">
           <p className={``}>{project.details}</p>
           {project.link === "" ? (
-            <p className="text-orange text-[10px]">This project is property of Desoft.</p>
+            <p className="text-orange text-[10px]">This project is private property. Details cannot be disclosed due to confidentiality agreements.</p>
           ) : (
             <a href={project.link} target="blank">
               <div className="h-9 w-32 text-snippets text-white flex items-center justify-center rounded-lg cursor-pointer bg-[#1C2B3A] hover:bg-[#263B50]">

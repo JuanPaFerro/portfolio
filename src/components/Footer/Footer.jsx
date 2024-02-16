@@ -9,7 +9,7 @@ const Footer = () => {
   const router = useRouter();
   return (
     <footer
-      className={`h-12 w-full border-t items-center bg-blue border-t-lines flex justify-between lg:justify-start z-10 lg:absolute bottom-0`}
+      className={`h-12 w-full border-t items-center bg-blue border-t-lines flex justify-between lg:justify-start z-50 lg:absolute bottom-0`}
     >
       <div className="pl-4 lg:flex lg:border-r lg:border-lines lg:h-full lg:items-center lg:w-40">
         <p className="text-label text-gray">find me in:</p>
