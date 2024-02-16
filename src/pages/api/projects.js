@@ -57,6 +57,22 @@ export default function handler(req, res) {
         link: "https://portfolio-juanpaferro.vercel.app",
         technologies: ["react", "html", "css", "javascript", "tailwind", "next"],
       },
+      {
+        title: "TuAmbia Store",
+        subtitle: "_tuambia-store",
+        image: "https://i.ibb.co/b2HLNQD/Screenshot-2023-01-18-at-9-10-45-PM.png",
+        details: "Web store created with NextJs and MateriaUI.",
+        link: "https://tuambia.com/",
+        technologies: ["react", "html", "css", "javascript", "mui", "next", "rhf", "react-query"]
+      },
+      {
+        title: "TuAmbia Backoffice",
+        subtitle: "_tuambia-backoffice",
+        image: "https://i.ibb.co/b2HLNQD/Screenshot-2023-01-18-at-9-10-45-PM.png",
+        details: "Backoffice application for the web store TuAmbia.",
+        link: "",
+        technologies: ["react", "html", "css", "javascript", "mui", "rhf", "react-query"]
+      }
     ],
   });
 }
